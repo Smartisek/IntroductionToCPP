@@ -35,10 +35,11 @@ void question6(){
     intVal++;
     dbl++;
     carMax++;
-    cout << "Integer: " << intVal << endl;
-    cout << "Double: " << dbl << endl;
-    cout << "Char: " << (int)carMax << endl;
-
+    cout << "Integer: " << intVal << " " << sizeof(intVal) << endl;
+    cout << "Double: " << dbl << " " << sizeof(dbl) << endl;
+    cout << "Char: " << (int)carMax << " " << sizeof(carMax) << endl;
+    // goes to minimum value, except for double that is the same
+    cout << "Double: " << numeric_limits<double>::min();
 }
 
 void question5(){
