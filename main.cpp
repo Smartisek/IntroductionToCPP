@@ -11,6 +11,7 @@ void question3();
 void question4();
 void question5();
 void question6();
+void question10();
 
 int main() {
 //    question1();
@@ -19,8 +20,21 @@ int main() {
 //    question3();
 //    question4();
 //    question5();
-      question6();
+//    question6();
+      question10();
     return 0;
+}
+
+void question10(){
+    cout << "Please enter text" << endl;
+    string txt;
+    getline(cin,txt);
+    string::size_type len = txt.size();
+
+    string top(len+4, '*');
+    cout << top << endl;
+    cout << "* " << txt << " *" << endl;
+    cout << top << endl;
 }
 
 void question6(){
