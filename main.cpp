@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 //read from down to up
 using namespace std;
 
@@ -6,14 +7,21 @@ void question1();
 void question1a();
 void question2();
 void question3();
+void question4();
 
 int main() {
 //    question1();
 //    question1a();
 //    question2();
-question3();
-
+//    question3();
+        question4();
     return 0;
+}
+
+void question4(){
+    for(int i=1; i<= 10; i++){
+        cout << left << setw(5) << i << " = " << setw(5) << (i*i) << endl;
+    }
 }
 
 void question3(){
