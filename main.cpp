@@ -11,6 +11,7 @@ int main() {
 //    question1();
 //    question1a();
 //    question2();
+question3();
 
     return 0;
 }
