@@ -5,12 +5,33 @@ using namespace std;
 void question1();
 void question1a();
 void question2();
+void question3();
 
 int main() {
-//     question1();
+//    question1();
 //    question1a();
-    question2();
+//    question2();
+
     return 0;
+}
+
+void question3(){
+  cout << "Question: " << endl;
+  int question;
+
+  cin >> question;
+
+  switch(question){
+      case 1:
+          question1();
+          break;
+      case 2:
+          question2();
+          break;
+      default:
+          cout << "Invalid choice." << endl;
+          break;
+  }
 }
 
 void question2(){
