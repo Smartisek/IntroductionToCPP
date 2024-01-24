@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <limits>
 //read from down to up
 using namespace std;
 
@@ -9,6 +10,7 @@ void question2();
 void question3();
 void question4();
 void question5();
+void question6();
 
 int main() {
 //    question1();
@@ -16,8 +18,27 @@ int main() {
 //    question2();
 //    question3();
 //    question4();
-      question5();
+//    question5();
+      question6();
     return 0;
+}
+
+void question6(){
+    int intVal = INT_MAX;
+    double dbl = numeric_limits<double>::max();
+    char carMax = numeric_limits<char>::max();
+
+    cout << "Integer: " << intVal << endl;
+    cout << "Double: " << dbl << endl;
+    cout << "Char: " << (int)carMax << endl;
+    cout << "\n";
+    intVal++;
+    dbl++;
+    carMax++;
+    cout << "Integer: " << intVal << endl;
+    cout << "Double: " << dbl << endl;
+    cout << "Char: " << (int)carMax << endl;
+
 }
 
 void question5(){
